@@ -1,0 +1,126 @@
+// Color Palette
+
+// rgba(0,0,0,.9) - deep black
+// rgba(0,0,0,.85) - black
+// rgba(0,0,0,.8) - print black
+// rgba(0,0,0,.75) - light black
+// rgba(0,0,0,.6) - muted black
+// #ba3925 - orange
+// #7a2518 - dark orange
+// #3a120c - maroon
+// #2561ba - blue
+// #f8f8f7 - warm beige
+// #f7f7f8 - cool beige
+// #f7f8f7 - tinted beige
+// #ddddd8 - light gray
+// #d8d8d8 - lighter gray
+// #efefed - very light gray
+
+// Zimbra Colors
+
+// Primary
+// #f15922 - Zimbra Oragnge
+// #0087c3 - Zimbra Blue
+// #f68b1f - Zimbra Gold
+
+// Secondary
+// #5f6062 - Charcoal Gray
+// #a7a9ac - Silver
+// #000000 - Black
+
+// Body (IMPORTANT $body-* variables must be defined above the defaults import)
+
+$body-bg: white;
+$body-font-color: rgba(0,0,0,0.8);
+$body-font-family: "Verdana", "Geneva", serif;
+
+@import "defaults";
+
+$zimbra-orange: #f15922;
+$zimbra-blue: #0087c3;
+$zimbra-blue-50: lighten($zimbra-blue, 45%); // 50% or over converts to white
+$zimbra-gold: #f68b1f;
+$zimbra-gold-50: lighten($zimbra-gold, 45%); // 50% or over converts to white
+$zimbra-charcoal: #5f6062;
+$zimbra-silver: #a7a9ac;
+$zimbra-black: #000000;
+
+// Default Overrides
+
+$primary-color: $zimbra-blue;
+$alert-color: lighten(#3a120c, 15%); // $code-color is 15% darker than $alert-color, so we lighten here by 15%
+$global-radius: 4px;
+$panel-bg: #f8f8f7;
+$panel-font-color: rgba(0,0,0,0.75);
+
+// Headings
+
+$header-font-family: "Cambria", "Georgia", sans-serif;
+$header-font-weight: 300;
+$header-font-color:  $zimbra-blue;
+$header-line-height: 1.2;
+$header-top-margin: 1em;
+$header-word-spacing: -0.05em;
+$title-font-color: $zimbra-charcoal;
+$title-font-weight: $header-font-weight;
+$subheader-font-family: $header-font-family;
+$subheader-font-size: 1rem;
+$subheader-font-color: $zimbra-orange;
+$subheader-font-weight: normal;
+$subheader-font-style: italic;
+$subheader-line-height: 1.45;
+$subheader-top-margin: 0;
+$subheader-bottom-margin: 0.25em;
+$sidebar-header-align: center;
+$sect-divider-size: 1px;
+$sect-divider-style: solid;
+$sect-divider-color: #efefed;
+$hr-border-color: #ddddd8;
+
+
+// Inline Code
+
+$code-font-family: "Droid Sans Mono", "DejaVu Sans Mono", monospace;
+$code-font-size: emCalc(15px);
+$code-font-weight: normal;
+$code-line-height: 1.45;
+$code-color: rgba(0,0,0,0.9);
+$code-bg-color: #f7f7f8;
+$code-padding: 0.1em 0.5ex;
+$code-word-spacing: -0.15em;
+$code-text-rendering: optimizeSpeed;
+
+// Code Blocks
+
+$pre-font-family: "Droid Sans Mono", "DejaVu Sans Mono", "Monospace", monospace;
+$pre-font-color: rgba(0,0,0,0.9);
+$pre-border-size: null;
+$pre-bg: #f7f7f8;
+$pre-padding: emCalc(16px);
+$pre-line-height: 1.45;
+
+// Links
+
+$anchor-text-decoration: underline;
+
+// Lists
+
+$list-side-margin: emCalc(24px);
+$definition-list-header-margin-bottom: emCalc(5px);
+$definition-list-margin-bottom: emCalc(20px);
+
+// Blockquotes
+
+$blockquote-font-color: $title-font-color;
+$blockquote-cite-font-color: rgba(0,0,0,0.6);
+$blockquote-cite-font-size: emCalc(15px);
+
+// Tables
+
+$table-head-font-size: inherit;
+$table-row-font-size: inherit;
+$table-line-height: 1.6;
+$table-head-bg: $zimbra-blue;
+$table-head-font-color: white;
+$table-even-row-bg: #f8f8f7;
+$table-border-color: #dedede;
